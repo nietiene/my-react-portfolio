@@ -1,13 +1,12 @@
 import { useState } from 'react'
 import Home from './pages/home'
-function App() {
-  
+
+export default function App() {
   return (
-    <>
-  <p className='bg-blue-500'></p>
-      <Home />
-    </>
-      )
+    <div className="bg-green-600 text-white p-8">
+      Tailwind is working!
+    </div>
+  );
 }
 
-export default App
+
