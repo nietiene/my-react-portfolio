@@ -1,21 +1,17 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 import { Link } from "react-scroll"
+import { motion } from "framer-motion"
 
 const Home = () => {
  
     return (
         <section
           name="home"
-          className="h-screen w-full bg-gradient-to-b from-black via-gray-900 to-gray-800 text-white flex items-center justify-center"
+          className="h-screen w-full bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white flex items-center justify-center px-4 md:px-16"
         >
-           <div className="text-center px-4">
-             <p className="text-lg text-center text-gray-400">Welcome to my portfolio</p>
-             <h1 className="text-4xl sm:text-6xl font-bold mt-4">
-                Hi, I'm <span className="text-cyan-400">Etiene</span>
-             </h1>
-             <h2 className="text-2xl sm:text-3xl mt-2 text-gray-300">
-                Web Developer & Problem Solver
-             </h2>
+           <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
+                <motion.div
+                   className="flex items-center md:text-left"></motion.div>
             </div>
         </section>
     )
