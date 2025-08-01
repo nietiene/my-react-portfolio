@@ -1,41 +1,71 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
-import { Link } from "react-scroll"
-import { motion } from "framer-motion"
-import avataaars from "../assets/avataaars.svg"
-
+// src/components/Home.jsx
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-scroll";
+import { motion } from "framer-motion";
+import avataaars from "../assets/avataaars.svg" 
 const Home = () => {
- 
-    return (
-        <section
-          name="home"
-          className="h-screen w-full bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white flex items-center justify-center px-4 md:px-16"
+  return (
+    <section
+      name="home"
+      className="h-screen w-full bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white flex items-center justify-center px-4 md:px-16"
+    >
+      <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
+        <motion.div
+          className="flex-1 text-center md:text-left"
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
         >
-           <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
-                <motion.div
-                   className="flex items-center md:text-left"
-                   initial={{ opacity: 0, x: -40 }}
-                   animate={{ opacity: 1, x: 0 }}
-                   transition={{ duration: 0.8}}
-                >
-                    <p className="text-lg text-cyan-400"> Welcome to my portfolio</p>
-                    <h1 className="text-4xl sm:text-6xl font-bold mt-2 leading-tight">
-                        Hi I'm <span className="text-cyan-600">Etiene</span>
-                    </h1>
-                    <h2 className="text-2xl sm:text-3xl text-gray-300 mt-2">
-                        Full Stack Developer & UI Enthusiast
-                    </h2>
+          <p className="text-lg text-cyan-400">Welcome to my portfolio</p>
+          <h1 className="text-4xl sm:text-6xl font-bold mt-2 leading-tight">
+            Hi, I'm <span className="text-cyan-500">Etiene</span>
+          </h1>
+          <h2 className="text-2xl sm:text-3xl text-gray-300 mt-2">
+            Web Developer & UI Enthusiast
+          </h2>
 
-                    <Link
-                       to="projects"
-                       smooth
-                       duration={500}
-                       className="iniline-block mt-6 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full text-lg shadow-lg transition duration-300 cursor-pointer"
-                    ></Link>
-                </motion.div>
-            </div>
-        </section>
-    )
-}
+          <Link
+            to="projects"
+            smooth
+            duration={500}
+            className="inline-block mt-6 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full text-lg shadow-lg transition duration-300 cursor-pointer"
+          >
+            View Projects
+          </Link>
 
+          <div className="flex justify-center md:justify-start gap-6 mt-8 text-2xl">
+            <a
+              href="https://github.com/nietiene"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-cyan-400 transition"
+            >
+              <FaGithub />
+            </a>
+           
+            <a
+              href="https://github.com/nietiene"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-cyan-400 transition"
+            >
+              <FaLinkedin />
+            </a>
+           
+            <a
+              href="https://github.com/nietiene"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-cyan-400 transition"
+            >
+              <FaEnvelope />
+            </a>
+           
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
 
-export default Home
+export default Home;
