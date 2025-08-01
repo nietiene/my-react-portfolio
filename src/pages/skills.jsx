@@ -7,7 +7,8 @@ import {
 } from "react-icons/fa"
 import {
   SiTailwindcss, SiExpress, SiFlask, SiDjango, SiMongoDb,
-  SiPostman, SiVercel, SiVisualstudiocode, SiSocketio, 
+  SiPostman, SiVercel, SiVisualstudiocode, SiSocketio,
+  SiPython, 
 } from "react-icons/si"
 
 import skillsIllustration from "../assets/skills.webp"
@@ -30,7 +31,10 @@ const skills = () => {
             items: [
                 { icon: <FaNodeJs className="text-green-500" name="Node.js"/>},
                 { icon: <SiExpress className="text-gray-300" name="Express"/>},
-                { icon: <SiExpress className="text-gray-300" name="Express"/>},
+                { icon: <SiFlask className="text-gray-300" name="Flask"/>},
+                { icon: <SiPython className="text-blue-400" name="Python"/>},
+                { icon: <SiDjango className="text-emerald-800" name="Django"/>},
+                { icon: <FaPhp className="text-indigo-500" name="PHP"/>},
             ]
         }
     ]
