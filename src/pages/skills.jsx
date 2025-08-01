@@ -22,7 +22,7 @@ const skills = () => {
                 { icon: <FaJs className="text-yellow-400"/>, name: "JavaScript"},
                 { icon: <FaReact className="text-cyan-400"/>, name: "React"},
                 { icon: <FaBootstrap className="text-purple-500"/>, name: "Bootastrap"},
-                { icon: <FaBootstrap className="text-purple-500"/>, name: "Bootastrap"},
+                { icon: <SiTailwindcss className="text-cyan-300"/>, name: "Tailwind"},
             ]
         }
     ]
