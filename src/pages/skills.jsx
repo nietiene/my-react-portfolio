@@ -162,7 +162,10 @@ const Skills = () => {
                                  variants={containerVariants}
                                 >
                                     {category.items.map((skill, skillIndex) => {
-                                        
+                                        <motion.div
+                                          key={skillIndex}
+                                          className="flex flex-col items-center gap-2 bg-gray-800/50 ;x-4 py-4 rounded-lg"
+                                          whileHover={{ scale: 1.05, boxShadow:}}></motion.div>
                                     })}
                                 </motion.div>
                             </motion.div>
