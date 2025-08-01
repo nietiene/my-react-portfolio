@@ -7,13 +7,27 @@ import {
 } from "react-icons/fa"
 import {
   SiTailwindcss, SiExpress, SiFlask, SiDjango, SiMongodb,
-  SiPostman, SiVercel, SiVisualstudiocode, SiSocketdotio,
+  SiPostman, SiVercel, SiSocketdotio,
    
 } from "react-icons/si"
 
 import skillsIllustration from "../assets/skills.webp"
 
 const Skills = () => {
+
+    const VSCodeIcon = ({ className }) => (
+  <svg
+    className={className}
+    viewBox="0 0 256 256"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+  >
+    <path d="M127.987 0c70.69 0 128 57.31 128 128s-57.31 128-128 128S0 198.69 0 128 57.31 0 127.987 0z" fill="#0065A9"/>
+    <path d="M83.002 105.226L63.001 123.14a5.001 5.001 0 000 7.71l20.001 17.913a5 5 0 006.622.03l91.064-81.616a2.5 2.5 0 000-3.77L89.623 31.799a2.5 2.5 0 00-3.28-.025l-20 17.889a5 5 0 00-.003 7.68l69.228 61.698-52.565 46.865z" fill="#007ACC"/>
+    <path d="M173.048 200.516a5 5 0 01-3.283 1.242H87.5a2.5 2.5 0 01-2.5-2.5V149.39l48.335-42.93 39.713 35.416v56.13z" fill="#1F9CF0"/>
+  </svg>
+);
+
     const skillsCategories = [
         {
             name: "Frontend",
@@ -49,7 +63,7 @@ const Skills = () => {
         items: [
             { icon: <FaGitAlt className="text-orange-600"/>, name: "Git"},
             { icon: <FaGithub className="text-white"/>, name: "GitHub"},
-            { icon: <SiVisualstudiocode className="text-blue-500"/>, name: "VS Code"},
+            { icon: <VSCodeIcon className="text-blue-500"/>, name: "VS Code"},
             { icon: <SiPostman className="text-orange-400"/>, name: "Postman"},
             { icon: <FaFigma className="text-purple-400"/>, name: "Figma"},
         ]
