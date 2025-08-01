@@ -29,10 +29,13 @@ const About = () => {
                 </p>
 
                <p className="text-lg">
-                i enjoy working with technologies like <span className="text-cyan-600 font-medium">React js</span>,
-                and <span className="text-cyan-600 font-semibold">Node js</span>,
-                 <span className="text-cyan-600 font-semibold">Python</span> and its framework 
-                <span className="text-cyan-600 font-semibold"> Flask</span>,
+                    I enjoy working with technologies like <span className="text-cyan-600 font-medium">React js</span>,
+                    and <span className="text-cyan-600 font-semibold"> Node js</span>,
+                    <span className="text-cyan-600 font-semibold"> Python</span> and its framework 
+                    <span className="text-cyan-600 font-semibold"> Flask</span>,
+                    <span className="text-cyan-600 font-semibold"> MySQL</span> and 
+                    <span className="text-cyan-600 font-semibold"> MongoDB</span>. I'm particularly drawn to creating interactive
+                    UI and solving real-world problem with code.  
                </p>
 
 
