@@ -49,9 +49,9 @@ const skills = () => {
         items: [
             { icon: <FaGitAlt className="text-orange-600"/>, name: "Git"},
             { icon: <FaGitHub className="text-white"/>, name: "GitHub"},
-            { icon: <FaGitAlt className="text-orange-600"/>, name: "Git"},
-            { icon: <FaGitAlt className="text-orange-600"/>, name: "Git"},
-            { icon: <FaGitAlt className="text-orange-600"/>, name: "Git"},
+            { icon: <SiVisualstudiocode className="text-blue-500"/>, name: "VS Code"},
+            { icon: <SiPostman className="text-orange-400"/>, name: "Postman"},
+            { icon: <FaFigma className="text-purple-400"/>, name: "Figma"},
         ]
         }
     ]
