@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 import { Link } from "react-scroll"
 import { motion } from "framer-motion"
-import avataaars from "../assets/avataaars"
+import avataaars from "../assets/avataaars.svg"
 
 const Home = () => {
  
@@ -19,8 +19,18 @@ const Home = () => {
                 >
                     <p className="text-lg text-cyan-400"> Welcome to my portfolio</p>
                     <h1 className="text-4xl sm:text-6xl font-bold mt-2 leading-tight">
-                        Hi mI'm <span className="text-cyan-600">Etiene</span>
+                        Hi I'm <span className="text-cyan-600">Etiene</span>
                     </h1>
+                    <h2 className="text-2xl sm:text-3xl text-gray-300 mt-2">
+                        Full Stack Developer & UI Enthusiast
+                    </h2>
+
+                    <Link
+                       to="projects"
+                       smooth
+                       duration={500}
+                       className="iniline-block mt-6 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full text-lg shadow-lg transition duration-300 cursor-pointer"
+                    ></Link>
                 </motion.div>
             </div>
         </section>
