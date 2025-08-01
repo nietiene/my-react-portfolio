@@ -43,6 +43,19 @@ const About = () => {
                 meaningful projects
               </p>
 
+              <ul className="text-lg list-disc list-inside">
+                <li>I love builing full-stack applications</li>
+                <li>Always learing something new — like Typescript or Next.js</li>
+                <li>Based in Rwanda, open to remote work</li>
+              </ul>
+
+              <Link to="/projects">
+                  <button className="mt-4 px-6 py-2 bg-cyan-600 hover:bg-cyan-700 text-white rounded-xl shadow-md transition"
+                  >
+                    View My Projects
+                </button>
+            </Link>
+
             </motion.div>
         </section>
     )
