@@ -187,11 +187,12 @@ const Skills = () => {
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 > 
-                <motion.div
-                  className="absolute -inset-4 border-2 border-cyan-400 rounded-2xl opacity-0 hover:opacity-100 
-                  transition-all duration-500"
-                  whileHover={{ opacity: 1 }}
-                  ></motion.div>
+                <motion.img 
+                src={skillsIllustration}
+                alt="Skills Illustration"
+                className="w-full max-w-lg"
+                />
+
                 </motion.div>
             </div>
         </section>
