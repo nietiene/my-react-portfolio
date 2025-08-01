@@ -92,6 +92,7 @@ const skills = () => {
     return (
         <section
           name="skills"
-          className="min-h-sreen"></section>
+          className="min-h-sreen w-full bg-gradient-to-b from-gray-900 via-black to-gray-900 
+            text-gray-300 flex items-center justify-center px-4 md:px-16 py-20"></section>
     )
 }
