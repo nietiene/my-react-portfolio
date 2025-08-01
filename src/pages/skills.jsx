@@ -170,6 +170,7 @@ const Skills = () => {
                                           custom={skillIndex * 0.1}
                                         >
                                             <span className="text-3xl mb-1">{skill.icon}</span>
+                                            <span className="text-center">{skill.name}</span>
                                         </motion.div>
                                     })}
                                 </motion.div>
