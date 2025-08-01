@@ -137,6 +137,24 @@ const Skills = () => {
                             My <span className="text-white">Skills</span>
                         </motion.h2>
 
+                    <motion.p
+                     className="text-lg leading-relaxed mb-12"
+                     variants={itemVariants}
+                    >
+                        Here's a comprehensive overview of the technologies and tools I work with to build modern web applications.
+                    </motion.p>
+
+                    <div className="space-y-12">
+                        {skillsCategories.map((category, catIndex) => {
+                            <motion.div
+                              key={catIndex}
+                              variants={itemVariants}
+                            >
+                                <motion.h3
+                                 className=""></motion.h3>
+                            </motion.div>
+                        })}
+                    </div>
                     </motion.div>
                 </motion.div>
             </div>
