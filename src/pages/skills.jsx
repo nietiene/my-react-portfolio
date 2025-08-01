@@ -165,7 +165,12 @@ const Skills = () => {
                                         <motion.div
                                           key={skillIndex}
                                           className="flex flex-col items-center gap-2 bg-gray-800/50 ;x-4 py-4 rounded-lg"
-                                          whileHover={{ scale: 1.05, boxShadow:}}></motion.div>
+                                          whileHover={{ scale: 1.05, boxShadow: "0 0 15px rgba(34, 211, 238, 0.5)"}}
+                                          variants={itemVariants}
+                                          custom={skillIndex * 0.1}
+                                        >
+                                            <span className="text-3xl mb-1">{skill.icon}</span>
+                                        </motion.div>
                                     })}
                                 </motion.div>
                             </motion.div>
