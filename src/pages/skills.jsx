@@ -107,7 +107,15 @@ const skills = () => {
                       variants={containerVariants}
                       initial="hidden"
                       animate="visible"
-                    ></motion.div>
+                    >
+                        <motion.h2
+                         className="text-4xl font-bold text-cyan-500 mb-8"
+                         variants={itemVariants}
+                        >
+                            My <span className="text-white">Skills</span>
+                        </motion.h2>
+                        
+                    </motion.div>
                 </motion.div>
             </div>
         </section>
