@@ -53,7 +53,7 @@ const Home = () => {
             </a>
            
             <a
-              href="https://github.com/nietiene"
+              href="https://www.linkedin.com/niyomugaboetiene53@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-cyan-400 transition"
