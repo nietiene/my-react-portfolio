@@ -43,12 +43,12 @@ const Skills = () => {
         {
             name: "Backend",
             items: [
-                { icon: <FaNodeJs className="text-green-500" name="Node.js"/>},
-                { icon: <SiExpress className="text-gray-300" name="Express"/>},
-                { icon: <SiFlask className="text-gray-300" name="Flask"/>},
-                { icon: <FaPython className="text-blue-400" name="Python"/>},
-                { icon: <SiDjango className="text-emerald-800" name="Django"/>},
-                { icon: <FaPhp className="text-indigo-500" name="PHP"/>},
+                { icon: <FaNodeJs className="text-green-500" />, name:"Node.js"},
+                { icon: <SiExpress className="text-gray-300" />, name:"Express"},
+                { icon: <SiFlask className="text-gray-300" />,  name:"Flask"},
+                { icon: <FaPython className="text-blue-400"/>, name:"Python"},
+                { icon: <SiDjango className="text-emerald-800" />, name:"Django"},
+                { icon: <FaPhp className="text-indigo-500" />,  name:"PHP"},
             ]
         },
         {
