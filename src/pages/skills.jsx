@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { delay, motion, progress } from "framer-motion";
 import {
     FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap,
     FaNodeJs, FaPython, FaPhp, FaDatabase, FaGitAlt,
@@ -102,6 +102,14 @@ const Skills = () => {
             transition: { duration: 0.6 }
         }
     };
+
+    const progressVariant = {
+        hidden: { width: 0 },
+        visible: (level) => ({
+            width: `${level}%`,
+            transition: { duration: 1, delay: 0.5 }
+        })
+    }
 
     return (
         <section
