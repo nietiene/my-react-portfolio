@@ -18,7 +18,7 @@ const Home = () => {
         >
           <p className="text-lg text-cyan-400">Welcome to my portfolio</p>
           <h1 className="text-4xl sm:text-6xl font-bold mt-2 leading-tight">
-            Hi, I'm <span className="text-cyan-500">Etiene</span>
+            Hi, I'm <span className="text-cyan-500">Etiene </span>
           </h1>
           <h2 className="text-2xl sm:text-3xl text-gray-300 mt-2">
             Full Stack Developer & UI Enthusiast
