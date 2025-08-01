@@ -36,6 +36,13 @@ const skills = () => {
                 { icon: <SiDjango className="text-emerald-800" name="Django"/>},
                 { icon: <FaPhp className="text-indigo-500" name="PHP"/>},
             ]
+        },
+        {
+            name: "Databases",
+            items: [
+                { icon: <FaDatabase className="text-amber-500"/>, name: "MySql"}
+                { icon: <SiMongoDb className="text-grren-600"/>, name: "MongoDB"}
+            ]
         }
     ]
 }
