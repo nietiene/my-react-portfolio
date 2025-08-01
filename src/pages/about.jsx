@@ -38,6 +38,10 @@ const About = () => {
                     UI and solving real-world problem with code.  
                </p>
 
+              <p className="text-lg">
+                Currently, I'm seeking opportunities in freelancing and internships to sharpen my skills and contribute to 
+                meaningful projects
+              </p>
 
             </motion.div>
         </section>
