@@ -103,7 +103,7 @@ const Skills = () => {
         }
     };
 
-    const progressVariant = {
+    const progressVariants = {
         hidden: { width: 0 },
         visible: (level) => ({
             width: `${level}%`,
@@ -171,6 +171,15 @@ const Skills = () => {
                                         >
                                             <span className="text-3xl mb-1">{skill.icon}</span>
                                             <span className="text-center">{skill.name}</span>
+
+                        {/* Optional progress bar - uncomment to use */}
+                         <div className="w-full bg-gray-700 rounded-full h-2 mt-2">
+                          <motion.div 
+                            className="bg-cyan-500 h-2 rounded-full"
+                            variants={progressVariants}
+                            custom={Math.floor(Math.random() * 60) + 40} // Random level between 40-100
+                          />
+                        </div>
                                         </motion.div>
                                     })}
                                 </motion.div>
