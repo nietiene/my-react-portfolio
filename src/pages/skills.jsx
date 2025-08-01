@@ -70,7 +70,7 @@ const Skills = () => {
         },
         {
             name: "Other",
-            item: [
+            items: [
                 { name: "REST APIs", icon: <span className="text-green-400">API</span> },
                 { icon: <SiSocketdotio className="text-white"/>, name: "Socket.IO"},
                 { name: "EJS", icon: <span className="text-yellow-400">EJS</span> },
