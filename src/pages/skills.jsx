@@ -3,11 +3,11 @@ import { delay, motion, progress } from "framer-motion";
 import {
     FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap,
     FaNodeJs, FaPython, FaPhp, FaDatabase, FaGitAlt,
-    FaGithub, FaFigma
+    FaGithub, FaFigma, FaFileUpload, FaUserShield, FaPassport
 } from "react-icons/fa"
 import {
   SiTailwindcss, SiExpress, SiFlask, SiDjango, SiMongodb,
-  SiPostman, SiVercel, SiSocketdotio,
+  SiPostman, SiVercel, SiSocketdotio, SiJavascript
    
 } from "react-icons/si"
 
@@ -73,11 +73,9 @@ const VSCodeIcon = ({ className }) => (
             items: [
                 { name: "REST APIs", icon: <span className="text-green-400">API</span> },
                 { icon: <SiSocketdotio className="text-white"/>, name: "Socket.IO"},
-                { name: "EJS", icon: <span className="text-yellow-400">EJS</span> },
-                { name: "Multer", icon: <span className="text-blue-400">MUL</span> },
-                { name: "Sessions", icon: <span className="text-green-400">SESS</span> },
-                { name: "Auth", icon: <span className="text-green-400">API</span> },
-                { name: "REST APIs", icon: <span className="text-cyan-400">AUTH</span> },
+                { name: "EJS", icon:  <SiJavascript className="text-yellow-400"/> },
+                { name: "Multer", icon: <FaFileUpload className="text-blue-400" /> },
+                { name: "Auth", icon: <FaUserShield className="text-cyan-400" /> },
                 { name: "Passport", icon: <span className="text-cyan-400">PASS</span> },
             ]
         }
