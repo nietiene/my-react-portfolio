@@ -58,7 +58,7 @@ const skills = () => {
             name: "Other",
             item: [
                 { name: "REST APIs", icon: <span className="text-green-400">API</span> },
-                { name: "REST APIs", icon: <span className="text-green-400">API</span> },
+                { icon: <SiSocketio className="text-white"/>, name: "Socket.IO"},
                 { name: "REST APIs", icon: <span className="text-green-400">API</span> },
                 { name: "REST APIs", icon: <span className="text-green-400">API</span> },
                 { name: "REST APIs", icon: <span className="text-green-400">API</span> },
