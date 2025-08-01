@@ -53,6 +53,18 @@ const skills = () => {
             { icon: <SiPostman className="text-orange-400"/>, name: "Postman"},
             { icon: <FaFigma className="text-purple-400"/>, name: "Figma"},
         ]
+        },
+        {
+            name: "Other",
+            item: [
+                { name: "REST APIs", icon: <span className="text-green-400">API</span> },
+                { name: "REST APIs", icon: <span className="text-green-400">API</span> },
+                { name: "REST APIs", icon: <span className="text-green-400">API</span> },
+                { name: "REST APIs", icon: <span className="text-green-400">API</span> },
+                { name: "REST APIs", icon: <span className="text-green-400">API</span> },
+                { name: "REST APIs", icon: <span className="text-green-400">API</span> },
+                { name: "REST APIs", icon: <span className="text-green-400">API</span> },
+            ]
         }
     ]
 }
