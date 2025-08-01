@@ -13,7 +13,7 @@ import {
 
 import skillsIllustration from "../assets/skills.webp"
 
-const skills = () => {
+const Skills = () => {
     const skillsCategories = [
         {
             name: "Frontend",
@@ -114,10 +114,12 @@ const skills = () => {
                         >
                             My <span className="text-white">Skills</span>
                         </motion.h2>
-                        
+
                     </motion.div>
                 </motion.div>
             </div>
         </section>
     )
 }
+
+export default Skills
