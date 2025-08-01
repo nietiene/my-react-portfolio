@@ -65,7 +65,7 @@ const Home = () => {
         <motion.div
            className="flex-1"
            initial={{ opacity:0, x: 40 }}
-           animate={{ opacity1, x:0 }}
+           animate={{ opacity:1, x:0 }}
            transition={{ duration: 0.8 }}
         >
            <img src={avataaars} alt="Etiene the developer" 
