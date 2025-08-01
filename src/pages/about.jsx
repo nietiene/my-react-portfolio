@@ -10,7 +10,12 @@ const About = () => {
                src={aboutMe}
                alt="About me Illustration"
                className="w-full md:w-1/2 max-w-lg mb-10 md:mb-0"
+               initial={{ x: -100, opacity: 0 }}
+
             />
         </section>
     )
 } 
+
+
+export default About
