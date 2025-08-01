@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import {
     FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap,
     FaNodeJs, FaPython, FaPhp, FaDatabase, FaGitAlt,
-    FaGitHub, FaFigma
+    FaGithub, FaFigma
 } from "react-icons/fa"
 import {
-  SiTailwindcss, SiExpress, SiFlask, SiDjango, SiMongoDb,
-  SiPostman, SiVercel, SiVisualstudiocode, SiSocketio,
+  SiTailwindcss, SiExpress, SiFlask, SiDjango, SiMongodb,
+  SiPostman, SiVercel, SiVisualstudiocode, SiSocketdotio,
    
 } from "react-icons/si"
 
@@ -41,14 +41,14 @@ const Skills = () => {
             name: "Databases",
             items: [
                 { icon: <FaDatabase className="text-amber-500"/>, name: "MySql"},
-                { icon: <SiMongoDb className="text-grren-600"/>, name: "MongoDB"}
+                { icon: <SiMongodb className="text-grren-600"/>, name: "MongoDB"}
             ]
         },
         {
         name: "Dev Tools",
         items: [
             { icon: <FaGitAlt className="text-orange-600"/>, name: "Git"},
-            { icon: <FaGitHub className="text-white"/>, name: "GitHub"},
+            { icon: <FaGithub className="text-white"/>, name: "GitHub"},
             { icon: <SiVisualstudiocode className="text-blue-500"/>, name: "VS Code"},
             { icon: <SiPostman className="text-orange-400"/>, name: "Postman"},
             { icon: <FaFigma className="text-purple-400"/>, name: "Figma"},
@@ -58,7 +58,7 @@ const Skills = () => {
             name: "Other",
             item: [
                 { name: "REST APIs", icon: <span className="text-green-400">API</span> },
-                { icon: <SiSocketio className="text-white"/>, name: "Socket.IO"},
+                { icon: <SiSocketdotio className="text-white"/>, name: "Socket.IO"},
                 { name: "EJS", icon: <span className="text-yellow-400">EJS</span> },
                 { name: "Multer", icon: <span className="text-blue-400">MUL</span> },
                 { name: "Sessions", icon: <span className="text-green-400">SESS</span> },
