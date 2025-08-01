@@ -28,6 +28,14 @@ const About = () => {
                     journey out of curiosity, but quick turned it into a real passion and carrer goal
                 </p>
 
+               <p className="text-lg">
+                i enjoy working with technologies like <span className="text-cyan-600 font-medium">React js</span>,
+                and <span className="text-cyan-600 font-semibold">Node js</span>,
+                 <span className="text-cyan-600 font-semibold">Python</span> and its framework 
+                <span className="text-cyan-600 font-semibold"> Flask</span>,
+               </p>
+
+
             </motion.div>
         </section>
     )
