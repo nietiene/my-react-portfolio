@@ -59,12 +59,24 @@ const skills = () => {
             item: [
                 { name: "REST APIs", icon: <span className="text-green-400">API</span> },
                 { icon: <SiSocketio className="text-white"/>, name: "Socket.IO"},
-                { name: "REST APIs", icon: <span className="text-green-400">API</span> },
-                { name: "REST APIs", icon: <span className="text-green-400">API</span> },
-                { name: "REST APIs", icon: <span className="text-green-400">API</span> },
-                { name: "REST APIs", icon: <span className="text-green-400">API</span> },
-                { name: "REST APIs", icon: <span className="text-green-400">API</span> },
+                { name: "EJS", icon: <span className="text-yellow-400">EJS</span> },
+                { name: "Multer", icon: <span className="text-blue-400">MUL</span> },
+                { name: "Sessions", icon: <span className="text-green-400">SESS</span> },
+                { name: "Auth", icon: <span className="text-green-400">API</span> },
+                { name: "REST APIs", icon: <span className="text-cyan-400">AUTH</span> },
+                { name: "Passport", icon: <span className="text-cyan-400">PASS</span> },
             ]
         }
-    ]
+    ];
+
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1, 
+            transition: {
+                staggerChildren: 0.1,
+                delayChildren: 0.3
+            }
+        }
+    }
 }
