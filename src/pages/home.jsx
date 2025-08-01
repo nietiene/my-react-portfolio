@@ -63,11 +63,13 @@ const Home = () => {
 
         {/* my avatar vector image */}
         <motion.div
-        className="flex-1"
-        initial={{ opacity:0, x: 40 }}
-        animate={{ opacity1, x:0 }}
-        transition={{ duration: 0.8 }}>
-
+           className="flex-1"
+           initial={{ opacity:0, x: 40 }}
+           animate={{ opacity1, x:0 }}
+           transition={{ duration: 0.8 }}
+        >
+           <img src={avataaars} alt="Etiene the developer" 
+             className="w-full max-w-md mx-auto drop-shadow-lg hover:scale-105 transition duration-500"/>
         </motion.div>
       </div>
     </section>
