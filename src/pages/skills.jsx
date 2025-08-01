@@ -93,6 +93,9 @@ const skills = () => {
         <section
           name="skills"
           className="min-h-sreen w-full bg-gradient-to-b from-gray-900 via-black to-gray-900 
-            text-gray-300 flex items-center justify-center px-4 md:px-16 py-20"></section>
+            text-gray-300 flex items-center justify-center px-4 md:px-16 py-20"
+        >
+            <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12"></div>
+        </section>
     )
 }
