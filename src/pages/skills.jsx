@@ -69,9 +69,9 @@ const VSCodeIcon = ({ className }) => (
         ]
         },
         {
-            name: "Other",
+            name: "Others",
             items: [
-                { name: "REST APIs", icon: <span className="text-green-400">API</span> },
+                { name: "REST APIs", icon: <SiPostman className="text-orange-400" /> },
                 { icon: <SiSocketdotio className="text-white"/>, name: "Socket.IO"},
                 { name: "EJS", icon:  <SiJavascript className="text-yellow-400"/> },
                 { name: "Multer", icon: <FaFileUpload className="text-blue-400" /> },
@@ -168,7 +168,7 @@ const VSCodeIcon = ({ className }) => (
                                           custom={skillIndex * 0.1}
                                         >
                                             <span className="text-3xl mb-1">{skill.icon}</span>
-                                            <span className="text-center">{skill.name}</span>
+                                            <span className="text-center text-cyan-400">{skill.name}</span>
                                         </motion.div>
                                     ))}
                                 </motion.div>
