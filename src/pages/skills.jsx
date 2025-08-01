@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa"
 import {
   SiTailwindcss, SiExpress, SiFlask, SiDjango, SiMongodb,
-  SiPostman, SiVercel, SiMicrosoft , SiSocketdotio,
+  SiPostman, SiVercel, SiVisualstudiocode, SiSocketdotio,
    
 } from "react-icons/si"
 
@@ -49,7 +49,7 @@ const Skills = () => {
         items: [
             { icon: <FaGitAlt className="text-orange-600"/>, name: "Git"},
             { icon: <FaGithub className="text-white"/>, name: "GitHub"},
-            { icon: <SiMicrosoft  className="text-blue-500"/>, name: "VS Code"},
+            { icon: <SiVisualstudiocode className="text-blue-500"/>, name: "VS Code"},
             { icon: <SiPostman className="text-orange-400"/>, name: "Postman"},
             { icon: <FaFigma className="text-purple-400"/>, name: "Figma"},
         ]
