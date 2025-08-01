@@ -78,5 +78,20 @@ const skills = () => {
                 delayChildren: 0.3
             }
         }
-    }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 1, y: 20 },
+        visible: {
+            opacity: 1, 
+            y: 0,
+            transition: { duration: 0.6 }
+        }
+    };
+
+    return (
+        <section
+          name="skills"
+          className="min-h-sreen"></section>
+    )
 }
