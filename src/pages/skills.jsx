@@ -99,8 +99,16 @@ const skills = () => {
                 {/* skills grid on left side*/}
                 <motion.div
                  className="flex-1"
-                 initial={{ opacity: 1, x: -10 }}
-                 animate={{ opacity:1, x: 0}}></motion.div>
+                 initial={{ opacity: 1, x: -100 }}
+                 animate={{ opacity:1, x: 0 }}
+                 transition={{ duration: 0.8, type: "spring" }}
+                >
+                    <motion.div
+                      variants={containerVariants}
+                      initial="hidden"
+                      animate="visible"
+                    ></motion.div>
+                </motion.div>
             </div>
         </section>
     )
