@@ -58,8 +58,16 @@ const Home = () => {
             >
               <FaEnvelope />
             </a>
-           
           </div>
+        </motion.div>
+
+        {/* my avatar vector image */}
+        <motion.div
+        className="flex-1"
+        initial={{ opacity:0, x: 40 }}
+        animate={{ opacity1, x:0 }}
+        transition={{ duration: 0.8 }}>
+
         </motion.div>
       </div>
     </section>
