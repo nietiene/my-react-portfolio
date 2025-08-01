@@ -191,8 +191,12 @@ const Skills = () => {
                 src={skillsIllustration}
                 alt="Skills Illustration"
                 className="w-full max-w-lg"
+                whileHover={{ scale: 1.02 }}
                 />
-
+                   <motion.div
+                     className="absolute -inset-4 border-2 border-cyan-400 rounded-2xl opacity-0 hover:opacity-100 transition-all duration-500"
+                     whileHover={{ opacity: 1 }}
+                   />
                 </motion.div>
             </div>
         </section>
