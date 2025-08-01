@@ -75,8 +75,8 @@ const VSCodeIcon = ({ className }) => (
                 { icon: <SiSocketdotio className="text-white"/>, name: "Socket.IO"},
                 { name: "EJS", icon:  <SiJavascript className="text-yellow-400"/> },
                 { name: "Multer", icon: <FaFileUpload className="text-blue-400" /> },
-                { name: "Auth", icon: <FaUserShield className="text-cyan-400" /> },
-                { name: "Passport", icon: <span className="text-cyan-400">PASS</span> },
+                { name: "Auth", icon: <FaUserShield className="text-green-400" /> },
+                { name: "Passport", icon: <FaPassport className="text-cyan-400" /> },
             ]
         }
     ];
