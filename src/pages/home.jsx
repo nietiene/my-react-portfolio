@@ -21,7 +21,7 @@ const Home = () => {
             Hi, I'm <span className="text-cyan-500">Etiene</span>
           </h1>
           <h2 className="text-2xl sm:text-3xl text-gray-300 mt-2">
-            Web Developer & UI Enthusiast
+            Full Stack Developer & UI Enthusiast
           </h2>
 
           <Link
@@ -44,7 +44,7 @@ const Home = () => {
             </a>
            
             <a
-              href="https://www.linkedin.com/in/etiene-niyomugabo-1b7072373/"
+              href="https://www.linkedin.com/in/etiene-niyomugabo-1b7072373"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-cyan-400 transition"
