@@ -54,8 +54,6 @@ const Home = () => {
            
             <a
               href="mailto:niyomugaboetiene53@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
               className="hover:text-cyan-400 transition"
             >
               <FaEnvelope />
