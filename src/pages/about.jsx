@@ -23,7 +23,9 @@ const About = () => {
             >
                 <h2 className="text-4xl font-bold text-cyan-700">About Me</h2>
                 <p className="text-lg loading-relaxed">
-                    I'm <span className="font-semibold text-cyan-600">Etiene Niyomugabo</span>
+                    I'm <span className="font-semibold text-cyan-600">Etiene Niyomugabo</span>, a passosinate full stack developer
+                    with strong desire to build clean, user-friendly, and impactful digital experiences. I started my coding
+                    journey out of curiosity, but quick turned it into a real passion and carrer goal
                 </p>
 
             </motion.div>
