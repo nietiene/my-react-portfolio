@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaReact, FaNodeJs, FaPython, FaDatabase } from "react-icons/fa";
 import { SiFlask, SiMongodb, SiTypescript, SiNextdotjs } from "react-icons/si";
-import aboutMe from "../assets/19362653.jpg";
+import aboutMe from "../assets/19362653.png";
 
 const About = () => {
   const techStack = [

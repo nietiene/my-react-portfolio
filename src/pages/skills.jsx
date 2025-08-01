@@ -11,7 +11,7 @@ import {
    
 } from "react-icons/si"
 
-import skillsIllustration from "../assets/skills.webp"
+import skillsIllustration from "../assets/skills.png"
 
 const Skills = () => {
 
