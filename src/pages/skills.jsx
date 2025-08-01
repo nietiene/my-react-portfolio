@@ -40,9 +40,19 @@ const skills = () => {
         {
             name: "Databases",
             items: [
-                { icon: <FaDatabase className="text-amber-500"/>, name: "MySql"}
+                { icon: <FaDatabase className="text-amber-500"/>, name: "MySql"},
                 { icon: <SiMongoDb className="text-grren-600"/>, name: "MongoDB"}
             ]
+        },
+        {
+        name: "Dev Tools",
+        items: [
+            { icon: <FaGitAlt className="text-orange-600"/>, name: "Git"},
+            { icon: <FaGitHub className="text-white"/>, name: "GitHub"},
+            { icon: <FaGitAlt className="text-orange-600"/>, name: "Git"},
+            { icon: <FaGitAlt className="text-orange-600"/>, name: "Git"},
+            { icon: <FaGitAlt className="text-orange-600"/>, name: "Git"},
+        ]
         }
     ]
 }
