@@ -117,8 +117,16 @@ const Projects = () => {
                       variants={itemVariants}
                     >
                         Here are some of my projects available on GitHub. Each demonstrates different aspects of my full-stack develpment skills.
-
                       </motion.p>
+
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8"
+                      >
+                        {projects.map((projects, index) => (
+                            <motion.div
+                              key={index}
+                              ></motion.div>
+                        ))}
+                      </div>
                 </motion.div>
             </div>
            </section>
