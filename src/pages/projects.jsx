@@ -113,7 +113,12 @@ const Projects = () => {
                     </motion.h2>
 
                     <motion.p
-                      className="text-lg leading-relaxed mb-12 text-center mx-w-2xl mx-auto"></motion.p>
+                      className="text-lg leading-relaxed mb-12 text-center mx-w-2xl mx-auto"
+                      variants={itemVariants}
+                    >
+                        Here are some of my projects available on GitHub. Each demonstrates different aspects of my full-stack develpment skills.
+
+                      </motion.p>
                 </motion.div>
             </div>
            </section>
