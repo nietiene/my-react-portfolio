@@ -7,30 +7,15 @@ import Projects from './pages/projects'
 import Navbar from './pages/navbar'
 function App() {
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  const toggleMenu = () => {
-     setIsMenuOpen(prevState => !prevState)
- } 
-
- const closeMenu = () => {
-  setIsMenuOpen(false)
- }
   return (
     <Router>
-      <Navbar
-        isMenuOpen={isMenuOpen}
-        toggleMenu={toggleMenu}
-        closeMenu={closeMenu}
-      />
-      <main onClick={closeMenu}>
-        <Routes>
-           <Route path='/' element={<Home />}/>
-           <Route path='/about' element={<About />} />
-           <Route path='/skills' element={<Skills />}/>
-           <Route path='/projects' element={<Projects />}/>
-       </Routes>
-      </main>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/about' element={<About />} />
+        <Route path='/skills' element={<Skills />}/>
+        <Route path='/projects' element={<Projects />}/>
+        <Route path='navbar' element={<Navbar />}/>
+      </Routes>
     </Router>
   )
 }

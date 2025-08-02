@@ -11,6 +11,7 @@ import avataaars from "../assets/avataaars.svg"
 
 const NavBar = () => {
   const [activeAction, setActiveAction] = useState("home")
+  const [moblieMenuOpen, setMobileMenuOpen] = useState(false)
 
   const navItems = [
     { name: "Home", target: "home", icon: <FaHome />},
@@ -19,6 +20,11 @@ const NavBar = () => {
     { name: "Projects", target: "projects", icon: <FaProjectDiagram />},
     { name: "Contact Me", target: "contact", icon: <FaEnvelope />},
   ];
+
+  const handleNavClick (target) => {
+    setActiveAction(target)
+    setMobileMenuOpen(false)
+  }
 
 return (
   <motion.div
