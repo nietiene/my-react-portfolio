@@ -55,11 +55,6 @@ const NavBar = () => {
               <NavLink
                 key={item.target}
                 to={item.target}
-                smooth
-                duration={500}
-                spy={true}
-                offset={-80}
-                onSetActive={() => setActiveAction(item.target)}
                 className={({ isActive }) => 
                    `flex items-center gap-2 px-5 py-3 rounded-full text-lg font-medium ${
                   isActive
@@ -117,14 +112,9 @@ const NavBar = () => {
           >
             <div className="px-4 py-3 flex flex-col space-y-2">
               {navItems.map((item) => (
-                <Link
+                <NavLink
                   key={item.target}
                   to={item.target}
-                  smooth
-                  duration={500}
-                  spy={true}
-                  offset={-80}
-                  onSetActive={() => handleNavClick(item.target)}
                   className={`flex items-center gap-4 px-4 py-3 rounded-lg text-lg font-medium ${
                     activeAction === item.target
                       ? "text-cyan-400 bg-gray-800/50"
