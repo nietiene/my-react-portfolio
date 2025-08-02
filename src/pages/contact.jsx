@@ -16,13 +16,19 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true)
 
     try {
       await axios.post("http://localhost:5000/send", formData);
-      alert("Message sent successfully!");
+      setSubmitStatus("success");
+      setFormData({ name: "", email: "", message:"" });
+
     } catch (err) {
       console.error(err);
-      alert("Failed to send message.");
+      setSubmitStatus("error")
+    } finally {
+      setIsSubmitting(false)
+      setTimeout(() => setSubmitStatus(null), 5000)
     }
   };
 
