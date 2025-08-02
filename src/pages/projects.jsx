@@ -42,8 +42,8 @@ const Projects = () => {
                 {icon: <SiFirebase className="text-green-600"/>, name: "Firebase"},
             ],
             description:
-            "RESTFUL API an e-commerce platform with product managment, user authentication, and order proccessing.",
-            illustration: eccomerceIllustration,
+            "Student Management System with Student managment, user authentication, and Role based access control.",
+            illustration: studentIllustration,
             code: ""
         }
     ]
