@@ -4,14 +4,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   FaHome, FaUser, FaCode,
   FaProjectDiagram, FaEnvelope,
-  FaTimes
+  FaTimes, FaMoon, FaSun
 } from "react-icons/fa";
-import { Link } from "react-scroll";
 import avataaars from "../assets/avataaars.svg";
 
 const NavBar = () => {
   const [activeAction, setActiveAction] = useState("home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(true)
 
   const navItems = [
     { name: "Home", target: "/", icon: <FaHome /> },
@@ -25,6 +25,11 @@ const NavBar = () => {
     setActiveAction(target);
     setMobileMenuOpen(false);
   };
+
+  const toggleTheme = () => {
+    setDarkMode(!darkMode);
+    document.documentElement.classList.toggle("dark", darkMode)
+  }
 
   return (
     <motion.div
