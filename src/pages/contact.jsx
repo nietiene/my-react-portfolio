@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaMapMarkerAlt, FaWhatsapp, FaEnvelope, FaPhoneAlt, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -205,7 +205,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-1">Location</h3>
-                <p className="text-gray-300">San Francisco, CA</p>
+                <p className="text-gray-300">Bugesera, Rwanda</p>
               </div>
             </div>
 
@@ -215,7 +215,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-1">Email</h3>
-                <p className="text-gray-300">contact@example.com</p>
+                <p className="text-gray-300">niyomugaboetiene53@gmail.com</p>
               </div>
             </div>
 
@@ -225,12 +225,11 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-1">Phone</h3>
-                <p className="text-gray-300">+1 (555) 123-4567</p>
+                <p className="text-gray-300">+250 728 8184 299</p>
               </div>
             </div>
           </motion.div>
 
-          {/* Social Links */}
           <motion.div 
             className="mt-12"
             initial={{ opacity: 0 }}
@@ -258,13 +257,13 @@ const Contact = () => {
                 <FaGithub className="text-white text-xl" />
               </a>
               <a 
-                href="https://whatsapp.com" 
+                href="https://wa.me/+250728184299" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-700 hover:bg-cyan-600 rounded-full transition duration-300"
                 aria-label="GitHub"
               >
-                <FaGithub className="text-white text-xl" />
+                <FaWhatsapp className="text-white text-xl" />
               </a>
             </div>
           </motion.div>
