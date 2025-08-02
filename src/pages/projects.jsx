@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import {
     SiNodedotjs,
     SiMongodb,
-    SiFirebase,
+    SiDatabase,
     SiTailwindcss,
     SiTypescript,
     SiNextdotjs,
@@ -26,7 +26,7 @@ const Projects = () => {
             tech: [
                 { icon: <SiReact className="text-cyan-400" />, name: "React"},
                 { icon: <SiNodedotjs className="text-green-500" />, name: "Node.js"},
-                { icon: <SiFirebase className="text-yellow-400" />, name: "Firebase"},
+                { icon: <SiDatabase className="text-yellow-400" />, name: "MySQL"},
             ],
             description: 
             "A socket.io based chat application with real-tie messaging, user authentication and message history.",
@@ -38,7 +38,7 @@ const Projects = () => {
             tech: [
                 {icon: <SiPhp className="text-green-500"/>, name: "PHP"},
                 {icon: <SiTailwindcss className="text-gray-300"/>, name: "Tailwindcss"},
-                {icon: <SiFirebase className="text-green-600"/>, name: "Firebase"},
+                {icon: <SiDatabase className="text-green-600"/>, name: "MySQL"},
             ],
             description:
             "Student Management System with Student managment, user authentication, and Role based access control.",
@@ -134,7 +134,21 @@ const Projects = () => {
                                 </div>
 
                                 <div className="p-6">
-                                    <h3 className="text-2xl font-bold text-white mb-2"></h3>
+                                    <h3 className="text-2xl font-bold text-white mb-2">
+                                        {projects.title}
+                                    </h3>
+
+                                    <div className="flex flex-wrap gap-2 mb-4">
+                                        {projects.tech.map((tech, i) => (
+                                            <span 
+                                            key={i}
+                                            className="flex items-center gap-1 bg-gray-700/50 px-4 py-1 rounded-full text-sm"
+                                            >
+                                                {tech.icon}
+                                                {tech.name}
+                                            </span>
+                                        ))}
+                                    </div>
                                 </div>
                               </motion.div>
                         ))}
