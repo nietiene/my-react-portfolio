@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   FaHome, FaUser, FaCode,
@@ -13,11 +14,11 @@ const NavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", target: "home", icon: <FaHome /> },
-    { name: "About", target: "about", icon: <FaUser /> },
-    { name: "Skills", target: "skills", icon: <FaCode /> },
-    { name: "Projects", target: "projects", icon: <FaProjectDiagram /> },
-    { name: "Contact Me", target: "contact", icon: <FaEnvelope /> },
+    { name: "Home", target: "/", icon: <FaHome /> },
+    { name: "About", target: "/about", icon: <FaUser /> },
+    { name: "Skills", target: "/skills", icon: <FaCode /> },
+    { name: "Projects", target: "/projects", icon: <FaProjectDiagram /> },
+    { name: "Contact Me", target: "/contact", icon: <FaEnvelope /> },
   ];
 
   const handleNavClick = (target) => {
@@ -51,7 +52,7 @@ const NavBar = () => {
           {/* Desktop nav items */}
           <div className="hidden md:flex items-center gap-4">
             {navItems.map((item) => (
-              <Link
+              <NavLink
                 key={item.target}
                 to={item.target}
                 smooth
@@ -59,15 +60,17 @@ const NavBar = () => {
                 spy={true}
                 offset={-80}
                 onSetActive={() => setActiveAction(item.target)}
-                className={`flex items-center gap-2 px-5 py-3 rounded-full text-lg font-medium ${
-                  activeAction === item.target
+                className={({ isActive }) => 
+                   `flex items-center gap-2 px-5 py-3 rounded-full text-lg font-medium ${
+                  isActive
                     ? "text-cyan-400 bg-gray-800/50 shadow-inner shadow-cyan-500/20"
                     : "text-gray-300 hover:text-cyan-300 hover:bg-gray-800/30"
                 } transition-all duration-300 cursor-pointer`}
+                onClick={() => handleNavClick(item.target)}
               >
                 <span className="text-xl">{item.icon}</span>
                 <span>{item.name}</span>
-              </Link>
+              </NavLink>
             ))}
           </div>
 
