@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Outlet } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   FaHome, FaUser, FaCode,
@@ -138,7 +137,6 @@ const NavBar = () => {
         )}
       </AnimatePresence>
 
-       <Outlet />
     </motion.div>
   );
 };
