@@ -149,6 +149,8 @@ const Contact = () => {
                 "Send Message"
               )}
             </motion.button>
+        
+          {submitStatus === "success"}
 
          </form>
      
