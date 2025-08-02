@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import About from './pages/about'
 import Skills from './pages/skills'
 import Projects from './pages/projects'
-import Navbar from './pages/navbar'
+import Layout from './pages/layout'
 function App() {
 
   return (
     <Router>
       <Routes>
-        <Route element={<Navbar />}>
+        <Route element={<Layout />}>
            <Route path='/' element={<Home />}/>
             <Route path='/about' element={<About />} />
             <Route path='/skills' element={<Skills />}/>
