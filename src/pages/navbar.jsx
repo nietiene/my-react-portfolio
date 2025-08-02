@@ -69,8 +69,30 @@ return (
             </Link>
           ))}
         </div>
+       
+       {/* mobile menu button */}
+       <div className="md:hidden flex items-center">
+        <motion.div
+          className="text-gray-300 hover:text-cyan-400 focus:outline-none p-2"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+                        <svg
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
 
-        
+        </motion.div>
+       </div>
       </div>
     </div>
 
