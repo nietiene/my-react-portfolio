@@ -38,13 +38,20 @@ const Contact = () => {
       id="contact"
       className="min-h-screen w-full bg-gradient-to-b from-gray-900 via-black to-gray-300 px-4 md:20 flex items-center justify-center"
     >
+
       <motion.div
-         className="max-w-4xl w-full bg-gray-800/70 rounded-xl shadow-lg mb-8 text-center"
-         initial={{ opacity: 0 }}
-         animate={{ opacity: 1 }}
-         transition={{ delay: 0.2 }}
+         className="max-w-4xl w-full bg-gray-800/70 rounded-xl shadow-lg md:p-12"
+         initial={{ opacity: 0, y: 20 }}
+         animate={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.8 }}
         > 
-        Get In <span className="text-white">Touch</span>
+        <motion.h2 className="text-4xl font-bold text-cyan-500 mb-8 text-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+        >
+            Get In <span className="text-white">Touch</span>
+        </motion.h2>
      
      </motion.div>
     </section>
