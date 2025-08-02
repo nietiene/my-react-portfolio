@@ -35,9 +35,20 @@ return (
           className="flex-shrink-0 flex items-center gap-3"
           >
             <img
-              className="h-12 w-12 rounded-full border-2 border-cyan-500 object-cover hover:border-cyan-400"/>
-
+              className="h-12 w-12 rounded-full border-2 border-cyan-500 object-cover hover:border-cyan-400
+              transition-all duration-300"
+              src={avataaars}
+              alt="Etiene avatar"
+            />
+            <span className="text-white font-medium hidden md:inline-block text-xl bg-gradient-to-r from-cyan-400
+                to-cyan-200 bg-clip-text text-transparent"
+            >
+              Etiene
+            </span>
         </motion.div>
+
+        {/* nav items */}
+        <div className="hidden md:flex items-center gap-4"></div>
       </div>
     </div>
 
