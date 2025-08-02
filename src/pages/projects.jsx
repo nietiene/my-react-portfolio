@@ -124,6 +124,9 @@ const Projects = () => {
                         {projects.map((projects, index) => (
                             <motion.div
                               key={index}
+                              className="bg-grray-800/50 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 transition-all duration-300"
+                              variants={itemVariants}
+                              whileHover={{ y: -5 }}
                               ></motion.div>
                         ))}
                       </div>
