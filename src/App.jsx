@@ -18,7 +18,11 @@ function App() {
  }
   return (
     <Router>
-      
+      <Navbar
+        isMenuOpen={isMenuOpen}
+        toggleMenu={toggleMenu}
+        closeMenu={closeMenu}
+      />
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<About />} />
