@@ -10,7 +10,7 @@ import  { Link } from "react-scroll"
 import avataaars from "../assets/avataaars.svg"
 
 const NavBar = () => {
-  const [activeAction, setAction] = useState("home")
+  const [activeAction, setActiveAction] = useState("home")
 
   const navItems = [
     { name: "Home", target: "home", icon: <FaHome />},
@@ -48,7 +48,29 @@ return (
         </motion.div>
 
         {/* nav items */}
-        <div className="hidden md:flex items-center gap-4"></div>
+        <div className="hidden md:flex items-center gap-4">
+          {navItems.map((item) => (
+            <Link
+             key={item.target}
+             to={item.target}
+             smooth
+             duration={500}
+             spy={true}
+             offset={-80}
+             onSetActive={() => setActiveAction(item.target)}
+             className={`flex items-center gap-2 px-5 py-3 rounded-full text-lg font-medium ${
+              activeAction === item.target
+              ? "text-cyan-400 bg-gray-800/50 shadow-inner shadow-cyan-500/20"
+              : "text-gray-300 hover:text-cyan-300 hover:bg-gray-800/30"
+             } transition-all duration-300 cursor-pointer`}
+            >
+              <span className="text-xl">{item.icon}</span>
+              <span>{item.name}</span>
+            </Link>
+          ))}
+        </div>
+
+        
       </div>
     </div>
 
