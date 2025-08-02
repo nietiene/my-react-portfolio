@@ -31,7 +31,11 @@ return (
     <div className="max-w-6xl mx-auto px-4 md:px-16">
       <div className="flex items-center justify-between h-20">
         <motion.div
+          whileHover={{ scale: 1.05 }}
+          className="flex-shrink-0 flex items-center gap-3"
           >
+            <img
+              className="h-12 w-12 rounded-full border-2 border-cyan-500 object-cover hover:border-cyan-400"/>
 
         </motion.div>
       </div>
