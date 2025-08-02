@@ -127,7 +127,16 @@ const Projects = () => {
                               className="bg-grray-800/50 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 transition-all duration-300"
                               variants={itemVariants}
                               whileHover={{ y: -5 }}
-                              ></motion.div>
+                              >
+                                <div className="relative h-48 overflow-hidden flex items-center bg-gray-700/30">
+                                    <img src={projects.illustration} alt={projects.title} 
+                                    className="w-2/3 h-2/3 object-contain"/>
+                                </div>
+
+                                <div className="p-6">
+                                    <h3 className="text-2xl font-bold text-white mb-2"></h3>
+                                </div>
+                              </motion.div>
                         ))}
                       </div>
                 </motion.div>
