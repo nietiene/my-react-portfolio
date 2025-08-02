@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import avataaars from "../assets/avataaars.svg" 
+import { Outlet } from "react-router-dom";
 const Home = () => {
   return (
     <section
@@ -81,6 +82,7 @@ const Home = () => {
         </motion.div>
       </div>
     </section>
+
   );
 };
 
