@@ -7,6 +7,8 @@ const Contact = () => {
     email: "",
     message: ""
   });
+  const [submitStatus, setSubmitStatus] = useState(null)
+  const [isSubmittting, setIsSubmitting] = useState(null)
 
   const handleChange = (e) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -14,6 +16,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
       await axios.post("http://localhost:5000/send", formData);
       alert("Message sent successfully!");
