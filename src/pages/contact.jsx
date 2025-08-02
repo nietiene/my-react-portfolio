@@ -13,10 +13,10 @@ const Contact = () => {
     setIsSubmitting(true);
 
     emailjs.sendForm(
-      'YOUR_EMAILJS_SERVICE_ID', 
-      'YOUR_EMAILJS_TEMPLATE_ID',
+      'service_pk0qepk', 
+      'template_4wnqsjh',
       form.current,
-      'YOUR_EMAILJS_PUBLIC_KEY'
+      '7uTpEBOkECCIl2s7Q'
     )
     .then((result) => {
       setSubmitStatus('success');
