@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, stagger } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import {
     siReact,
@@ -66,7 +66,35 @@ const Projects = () => {
                 {icon: <SiReact className="text-cyan-400"/>, name: "React"},
                 {icon: <SiNextdotjs className="text-green-500"/>, name: "Node.js"},
                 {icon: <SiTailwindcss className="text-cyan-400"/>, name: "Tailwindcss"},
-            ]
-        }
-    ]
+            ],
+            description:
+            "Full-stack Library management application with mananging student functionality and Role based access control",
+            illustration: libraryAppIllustration,
+            code: "https://github.com/nietiene/Library-Management-System"
+        },
+    ];
+
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.1,
+                delayChildren: 0.3
+            },
+        },
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.6 },
+        },
+    };
+
+    return (
+        
+    )
 }
