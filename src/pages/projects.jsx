@@ -149,6 +149,13 @@ const Projects = () => {
                                     </div>
 
                                     <p className="text-gray-300 mb-6">{projects.description}</p>
+
+                                    <div className="flex gay-4">
+                                        <a href={projects.code}
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-2 px-2 py-2 border border-gray-600 hover:bg-gray-700/50
+                                         rounded-full transition-colors"></a>
+                                    </div>
                                 </div>
                               </motion.div>
                         ))}
