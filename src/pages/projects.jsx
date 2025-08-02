@@ -56,7 +56,17 @@ const Projects = () => {
                 { icon: <SiTypescript className="text-blue-500" />, name: "TypeScript"},
             ],
             description: 
-              "A responsive portfolio website showcasting project, skills and contact information with smooth animations."
+              "A responsive portfolio website showcasting project, skills and contact information with smooth animations.",
+              illustration: myPortfolio,
+              code: "https://github.com/nietiene/my-react-portfolio",
+        },
+        {
+            title: "Library Management System",
+            tech: [
+                {icon: <SiReact className="text-cyan-400"/>, name: "React"},
+                {icon: <SiNextdotjs className="text-green-500"/>, name: "Node.js"},
+                {icon: <SiTailwindcss className="text-cyan-400"/>, name: "Tailwindcss"},
+            ]
         }
     ]
 }
