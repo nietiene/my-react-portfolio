@@ -1,10 +1,9 @@
 import React from "react";
 import { motion, stagger } from "framer-motion";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaDatabase } from "react-icons/fa";
 import {
     SiNodedotjs,
     SiMongodb,
-    SiDatabase,
     SiTailwindcss,
     SiTypescript,
     SiNextdotjs,
@@ -26,7 +25,7 @@ const Projects = () => {
             tech: [
                 { icon: <SiReact className="text-cyan-400" />, name: "React"},
                 { icon: <SiNodedotjs className="text-green-500" />, name: "Node.js"},
-                { icon: <SiDatabase className="text-yellow-400" />, name: "MySQL"},
+                { icon: <FaDatabase className="text-yellow-400" />, name: "MySQL"},
             ],
             description: 
             "A socket.io based chat application with real-tie messaging, user authentication and message history.",
@@ -37,8 +36,8 @@ const Projects = () => {
             title: "Student Managment System",
             tech: [
                 {icon: <SiPhp className="text-green-500"/>, name: "PHP"},
-                {icon: <SiTailwindcss className="text-gray-300"/>, name: "Tailwindcss"},
-                {icon: <SiDatabase className="text-green-600"/>, name: "MySQL"},
+                {icon: <SiTailwindcss className="text-cyan-400"/>, name: "Tailwindcss"},
+                {icon: <FaDatabase className="text-green-600"/>, name: "MySQL"},
             ],
             description:
             "Student Management System with Student managment, user authentication, and Role based access control.",
@@ -63,7 +62,6 @@ const Projects = () => {
             tech: [
                 {icon: <SiReact className="text-cyan-400"/>, name: "React"},
                 {icon: <SiNextdotjs className="text-green-500"/>, name: "Node.js"},
-                {icon: <SiTailwindcss className="text-cyan-400"/>, name: "Tailwindcss"},
                 {icon: <SiMongodb className="text-green-500"/>, name: "MongoDb"},
             ],
             description:
