@@ -2,12 +2,10 @@ import React from "react";
 import { motion, stagger } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import {
-    siReact,
     SiNodedotjs,
-    SiMongoDb,
+    SiMongodb,
     SiFirebase,
     SiTailwindcss,
-    SiExpress,
     SiTypescript,
     SiNextdotjs,
     SiPhp,
@@ -66,6 +64,7 @@ const Projects = () => {
                 {icon: <SiReact className="text-cyan-400"/>, name: "React"},
                 {icon: <SiNextdotjs className="text-green-500"/>, name: "Node.js"},
                 {icon: <SiTailwindcss className="text-cyan-400"/>, name: "Tailwindcss"},
+                {icon: <SiMongodb className="text-green-500"/>, name: "MongoDb"},
             ],
             description:
             "Full-stack Library management application with mananging student functionality and Role based access control",
