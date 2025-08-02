@@ -1,9 +1,8 @@
 // src/components/Home.jsx
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import avataaars from "../assets/avataaars.svg" 
-import { Outlet } from "react-router-dom";
 const Home = () => {
   return (
     <section
@@ -25,22 +24,22 @@ const Home = () => {
             Full Stack Developer & UI Enthusiast
           </h2>
 
-          <Link
+          <RouterLink
             to="projects"
             smooth
             duration={500}
             className="inline-block mt-6 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full text-lg shadow-lg transition duration-300 cursor-pointer"
           >
             View Projects
-          </Link>
-          <Link
-            to="projects"
-            smooth
-            duration={500}
+          </RouterLink>
+
+          <a
+            download
+            href="#"
             className="inline-block mt-6 border border-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full text-lg shadow-lg transition duration-300 cursor-pointer"
           >
             Download Resume
-          </Link>
+          </a>
 
           <div className="flex justify-center md:justify-start gap-6 mt-8 text-2xl">
             <a
