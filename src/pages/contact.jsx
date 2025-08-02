@@ -52,6 +52,18 @@ const Contact = () => {
         >
             Get In <span className="text-white">Touch</span>
         </motion.h2>
+
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <motion.div
+             initial={{ opacity: 0, y: -20 }}
+             animate={{ opacity: 1, x: 0 }}
+             transition={{ delay: 0.4 }}
+            >
+              <label htmlFor="name" className="block mb-2 font-semibold text-gray-300">
+                Your Name
+              </label>
+            </motion.div>
+        </form>
      
      </motion.div>
     </section>
