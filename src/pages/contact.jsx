@@ -87,47 +87,70 @@ const Contact = () => {
                  onChange={handleChange}
                  required
                  className="w-full py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus-within:outline-none focus:ring-2 focus:ring-cyan-500"
-                 placeholder="Enter your name"
+                 placeholder="Enter your email"
                  disabled={isSubmittting}
                 />
             </motion.div>
+
           <motion.div
              initial={{ opacity: 0, y: -20 }}
              animate={{ opacity: 1, x: 0 }}
-             transition={{ delay: 0.4 }}
+             transition={{ delay: 0.6 }}
             >
-              <label htmlFor="name" className="block mb-2 font-semibold text-gray-300">
-                Your Name
+              <label htmlFor="message" className="block mb-2 font-semibold text-gray-300">
+                Your Message
               </label>
 
-              <input type="text" name="name" id="name" 
-                 value={formData.name}
+              <textarea name="message" id="message" 
+                 value={formData.message}
                  onChange={handleChange}
+                 rows="5"
                  required
                  className="w-full py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus-within:outline-none focus:ring-2 focus:ring-cyan-500"
-                 placeholder="Enter your name"
+                 placeholder="Write your message here..."
                  disabled={isSubmittting}
                 />
             </motion.div>
-          <motion.div
-             initial={{ opacity: 0, y: -20 }}
-             animate={{ opacity: 1, x: 0 }}
-             transition={{ delay: 0.4 }}
-            >
-              <label htmlFor="name" className="block mb-2 font-semibold text-gray-300">
-                Your Name
-              </label>
 
-              <input type="text" name="name" id="name" 
-                 value={formData.name}
-                 onChange={handleChange}
-                 required
-                 className="w-full py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus-within:outline-none focus:ring-2 focus:ring-cyan-500"
-                 placeholder="Enter your name"
-                 disabled={isSubmittting}
-                />
-            </motion.div>
-        </form>
+            <motion.button
+              type="submit"
+              disabled={isSubmittting}
+              className="w-full py-3 bg-cyan-600 hover:bg-cyan-700 rounded-full text-white font-semibold shadow-lg transition duration-300 flex items-center justify-center disabled:opacity-50"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.7 }}
+            >
+              {isSubmittting ? (
+               <>
+                <svg
+                  className="animate-spin mr-3 h-5 w-5 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  />
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  />
+                </svg>
+                Sending...
+                </>
+  
+              ) : (
+                "Send Message"
+              )}
+            </motion.button>
+
+         </form>
      
      </motion.div>
     </section>
