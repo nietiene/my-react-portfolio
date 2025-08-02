@@ -29,7 +29,10 @@ const Projects = () => {
                 { icon: <SiFirebase className="text-yellow-400" />, name: "Firebase"},
             ],
             description: 
-            "A socket.io based"
+            "A socket.io based chat application with real-tie messaging, user authentication and message history.",
+            illustration: chatAppIllustration,
+            code: "https://github.com/nietiene/Chat-app-frontend"
+
         }
     ]
 }
