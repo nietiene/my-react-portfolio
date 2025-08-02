@@ -32,6 +32,14 @@ const Home = () => {
           >
             View Projects
           </Link>
+          <Link
+            to="projects"
+            smooth
+            duration={500}
+            className="inline-block mt-6 border border-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full text-lg shadow-lg transition duration-300 cursor-pointer"
+          >
+            Download Resume
+          </Link>
 
           <div className="flex justify-center md:justify-start gap-6 mt-8 text-2xl">
             <a
