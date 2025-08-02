@@ -100,3 +100,6 @@ return (
 )
 
 }
+
+
+export default NavBar
