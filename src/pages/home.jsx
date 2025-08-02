@@ -3,7 +3,8 @@ import React, { useRef } from "react";
 import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
+import { init } from "@emailjs/browser";
+init("L8K9DEETs0q15rl9w")
 const Contact = () => {
   const form = useRef();
 
@@ -18,7 +19,7 @@ const Contact = () => {
     ).then(
       () => {
         alert("Message sent successfully!");
-        form.current.reset();
+        e.target.reset();
       }).
       catch((error) => {
             console.error("EmailJS error:", error);
