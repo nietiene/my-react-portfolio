@@ -62,6 +62,70 @@ const Contact = () => {
               <label htmlFor="name" className="block mb-2 font-semibold text-gray-300">
                 Your Name
               </label>
+
+              <input type="text" name="name" id="name" 
+                 value={formData.name}
+                 onChange={handleChange}
+                 required
+                 className="w-full py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus-within:outline-none focus:ring-2 focus:ring-cyan-500"
+                 placeholder="Enter your name"
+                 disabled={isSubmittting}
+                />
+            </motion.div>
+
+          <motion.div
+             initial={{ opacity: 0, y: -20 }}
+             animate={{ opacity: 1, x: 0 }}
+             transition={{ delay: 0.5 }}
+            >
+              <label htmlFor="email" className="block mb-2 font-semibold text-gray-300">
+                Your Email
+              </label>
+
+              <input type="email" name="email" id="email" 
+                 value={formData.email}
+                 onChange={handleChange}
+                 required
+                 className="w-full py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus-within:outline-none focus:ring-2 focus:ring-cyan-500"
+                 placeholder="Enter your name"
+                 disabled={isSubmittting}
+                />
+            </motion.div>
+          <motion.div
+             initial={{ opacity: 0, y: -20 }}
+             animate={{ opacity: 1, x: 0 }}
+             transition={{ delay: 0.4 }}
+            >
+              <label htmlFor="name" className="block mb-2 font-semibold text-gray-300">
+                Your Name
+              </label>
+
+              <input type="text" name="name" id="name" 
+                 value={formData.name}
+                 onChange={handleChange}
+                 required
+                 className="w-full py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus-within:outline-none focus:ring-2 focus:ring-cyan-500"
+                 placeholder="Enter your name"
+                 disabled={isSubmittting}
+                />
+            </motion.div>
+          <motion.div
+             initial={{ opacity: 0, y: -20 }}
+             animate={{ opacity: 1, x: 0 }}
+             transition={{ delay: 0.4 }}
+            >
+              <label htmlFor="name" className="block mb-2 font-semibold text-gray-300">
+                Your Name
+              </label>
+
+              <input type="text" name="name" id="name" 
+                 value={formData.name}
+                 onChange={handleChange}
+                 required
+                 className="w-full py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus-within:outline-none focus:ring-2 focus:ring-cyan-500"
+                 placeholder="Enter your name"
+                 disabled={isSubmittting}
+                />
             </motion.div>
         </form>
      
