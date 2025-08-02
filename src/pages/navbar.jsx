@@ -14,10 +14,17 @@ const NavBar = () => {
 
   const navItems = [
     { name: "Home", target: "home", icon: <FaHome />},
-    { name: "About", target: "home", icon: <FaHome />},
-    { name: "Skills", target: "home", icon: <FaHome />},
-    { name: "Projects", target: "home", icon: <FaHome />},
-    { name: "Contact Me", target: "home", icon: <FaHome />},
-    { name: "Home", target: "home", icon: <FaHome />},
-  ]
+    { name: "About", target: "about", icon: <FaUser />},
+    { name: "Skills", target: "skills", icon: <FaCode />},
+    { name: "Projects", target: "projects", icon: <FaProjectDiagram />},
+    { name: "Contact Me", target: "contact", icon: <FaEnvelope />},
+  ];
+
+return (
+  <motion.div
+   >
+
+  </motion.div>
+)
+
 }
