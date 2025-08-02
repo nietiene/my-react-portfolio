@@ -3,8 +3,7 @@ import React, { useRef } from "react";
 import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { init } from "@emailjs/browser";
-init("L8K9DEETs0q15rl9w")
+
 const Contact = () => {
   const form = useRef();
 
@@ -16,8 +15,7 @@ const Contact = () => {
       "template_4wnqsjh",    // Replace with your actual template ID
       form.current,
       "L8K9DEETs0q15rl9w"      // Replace with your public API key
-    ).then(
-      () => {
+    ).then(() => {
         alert("Message sent successfully!");
         e.target.reset();
       }).
