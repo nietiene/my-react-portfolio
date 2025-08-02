@@ -95,6 +95,28 @@ const Projects = () => {
     };
 
     return (
-        
+        <section
+        name="projects"
+          className="min-h-screen w-full bg-gradient-to-b from-gray-900 via-black to-gray-900 text-gray-300 flex items-center justify-center
+           mmd:px-16 py-20"
+        >
+            <div className="max-w-6xl w-full">
+                <motion.div
+                 variants={containerVariants}
+                 initial="hidden"
+                 animate="visible"
+                >
+                    <motion.h2 
+                       className="text-4xl font-bold text-cyan-500 mb-8 text-center"
+                       variants={itemVariants}
+                    >
+                        My <span className="text-white">Projects </span>
+                    </motion.h2>
+
+                    <motion.p
+                      className="text-lg leading-relaxed mb-12 text-center mx-w-2xl mx-auto"></motion.p>
+                </motion.div>
+            </div>
+           </section>
     )
 }
