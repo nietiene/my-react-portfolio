@@ -47,7 +47,7 @@ const About = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
           >
             <p className="text-lg leading-relaxed">
-              I'm <span className="font-semibold text-cyan-400">Etiene Niyomugabo</span>, a passionate full stack developer with a strong desire to build clean, user-friendly, and impactful digital experiences. What began as curiosity has evolved into a dedicated career path.
+              I'm <span className="font-semibold text-cyan-400">Etiene Niyomugabo</span>, a passionate full stack developer with a strong desire to build clean, user-friendly, and impactful digital experiences. What began as curiosity has envolved into a dedicated career path.
             </p>
 
             <p className="text-lg leading-relaxed">
