@@ -21,7 +21,7 @@ const NavBar = () => {
     { name: "Contact Me", target: "contact", icon: <FaEnvelope />},
   ];
 
-  const handleNavClick (target) => {
+  const handleNavClick = (target) => {
     setActiveAction(target)
     setMobileMenuOpen(false)
   }
@@ -81,6 +81,8 @@ return (
         <motion.div
           className="text-gray-300 hover:text-cyan-400 focus:outline-none p-2"
           whileHover={{ scale: 1.1 }}
+          onClick={() => setMobileMenuOpen(!moblieMenuOpen)}
+          aria-label="Toggle menu"
           whileTap={{ scale: 0.9 }}
         >
                         <svg
