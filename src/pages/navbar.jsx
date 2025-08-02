@@ -3,7 +3,8 @@ import { motion } from "framer-motion"
 
 import {
   FaHome, FaUser, FaCode,
-  FaProjectDiagram, FaEnvelope
+  FaProjectDiagram, FaEnvelope,
+  FaTimes
 } from "react-icons/fa"
 
 import  { Link } from "react-scroll"
@@ -85,7 +86,10 @@ return (
           aria-label="Toggle menu"
           whileTap={{ scale: 0.9 }}
         >
-                        <svg
+          {moblieMenuOpen ? (
+            <FaTimes className="h-6 w-6" />
+          ) : (
+            <svg
                 className="h-8 w-8"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -98,6 +102,8 @@ return (
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
+          )}
+
 
         </motion.div>
        </div>
