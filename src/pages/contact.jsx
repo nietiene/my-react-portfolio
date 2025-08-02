@@ -150,7 +150,27 @@ const Contact = () => {
               )}
             </motion.button>
         
-          {submitStatus === "success"}
+          {submitStatus === "success" && (
+            <motion.div
+              className="text-green-100 rounded-md p-3 text-center mt-4 font-medium"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              Message sent successfully I &apos;ll get back you soon.
+            </motion.div>
+          )}
+
+          {submitStatus === "error" && (
+            <motion.div
+              className="text-red-600 bg-red-100 rounded-md p-3 text-center mt-4 font-medium"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              Failed to send message. Please try again later. 
+            </motion.div>
+          )}
 
          </form>
      
