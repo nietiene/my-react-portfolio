@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -33,12 +34,8 @@ const Contact = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" name="name" placeholder="Your Name" onChange={handleChange} />
-      <input type="email" name="email" placeholder="Your Email" onChange={handleChange} />
-      <textarea name="message" placeholder="Your Message" onChange={handleChange}></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+
+
   );
 };
 
