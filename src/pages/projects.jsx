@@ -147,6 +147,8 @@ const Projects = () => {
                                             </span>
                                         ))}
                                     </div>
+
+                                    <p className="text-gray-300 mb-6">{projects.description}</p>
                                 </div>
                               </motion.div>
                         ))}
