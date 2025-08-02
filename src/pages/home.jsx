@@ -22,7 +22,6 @@ const Home = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Animation variants for text
   const textVariants = {
     enter: { 
       opacity: 0, 
@@ -44,7 +43,7 @@ const Home = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-4 md:px-12 bg-gradient-to-b from-gray-900 to-black">
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        {/* Left side - Text content */}
+
         <div className="space-y-6">
           <motion.h1 
             className="text-4xl md:text-5xl font-bold text-white"
@@ -71,7 +70,6 @@ const Home = () => {
             </AnimatePresence>
           </div>
 
-          {/* Rest of your content remains the same */}
           <motion.p 
             className="text-gray-400 text-lg max-w-lg"
             initial={{ opacity: 0 }}
@@ -109,7 +107,7 @@ const Home = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
           >
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/nietiene" target="_blank" rel="noopener noreferrer"
               className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition duration-300">
               <FaGithub className="text-white text-xl" />
             </a>
@@ -117,14 +115,13 @@ const Home = () => {
               className="p-3 bg-gray-800 hover:bg-blue-600 rounded-full transition duration-300">
               <FaLinkedin className="text-white text-xl" />
             </a>
-            <a href="https://wa.me/yournumber" target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/+250728184299" target="_blank" rel="noopener noreferrer"
               className="p-3 bg-gray-800 hover:bg-green-500 rounded-full transition duration-300">
               <FaWhatsapp className="text-white text-xl" />
             </a>
           </motion.div>
         </div>
 
-        {/* Right side - Profile image */}
         <motion.div
           className="flex justify-center"
           initial={{ opacity: 0, scale: 0.8 }}
