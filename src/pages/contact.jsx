@@ -34,8 +34,20 @@ const Contact = () => {
   };
 
   return (
-
-
+    <section
+      id="contact"
+      className="min-h-screen w-full bg-gradient-to-b from-gray-900 via-black to-gray-300 px-4 md:20 flex items-center justify-center"
+    >
+      <motion.div
+         className="max-w-4xl w-full bg-gray-800/70 rounded-xl shadow-lg mb-8 text-center"
+         initial={{ opacity: 0 }}
+         animate={{ opacity: 1 }}
+         transition={{ delay: 0.2 }}
+        > 
+        Get In <span className="text-white">Touch</span>
+     
+     </motion.div>
+    </section>
   );
 };
 
