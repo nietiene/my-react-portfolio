@@ -53,8 +53,10 @@ const Projects = () => {
             tech: [
                 { icon: <SiNextdotjs className="text-white" />, name: "Next.js"},
                 { icon: <SiTailwindcss className="text-cyan-300" />, name: "Tailwind"},
-                { icon: <SiTypescript className="text-blue-500" />, name: "Next.js"},
-            ]
+                { icon: <SiTypescript className="text-blue-500" />, name: "TypeScript"},
+            ],
+            description: 
+              "A responsive portfolio website showcasting project, skills and contact information with smooth animations."
         }
     ]
 }
