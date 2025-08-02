@@ -7,8 +7,18 @@ import Projects from './pages/projects'
 import Navbar from './pages/navbar'
 function App() {
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const toggleMenu = () => {
+     setIsMenuOpen(prevState => !prevState)
+ } 
+
+ const closeMenu = () => {
+  setIsMenuOpen(false)
+ }
   return (
     <Router>
+      
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<About />} />
