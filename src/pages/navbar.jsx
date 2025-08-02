@@ -22,6 +22,11 @@ const NavBar = () => {
 
 return (
   <motion.div
+     initial={{ y: 100 }}
+     animate={{ y: 0 }}
+     transition={{ duration: 0.5 }}
+     className="fixed top-0 left-0 ring-0 z-50 bg-gradient-to-b from-gray-900/95 via-black/95
+        backdrop-blur-sm shadow-lg shadow-cyan-500/10"
    >
 
   </motion.div>
