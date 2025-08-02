@@ -115,15 +115,16 @@ const NavBar = () => {
                 <NavLink
                   key={item.target}
                   to={item.target}
-                  className={`flex items-center gap-4 px-4 py-3 rounded-lg text-lg font-medium ${
-                    activeAction === item.target
+                  className={({ isActive}) => 
+                    `flex items-center gap-4 px-4 py-3 rounded-lg text-lg font-medium ${
+                      isActive 
                       ? "text-cyan-400 bg-gray-800/50"
                       : "text-gray-300 hover:text-cyan-300"
                   } transition-all duration-300 cursor-pointer`}
                 >
                   <span className="text-xl">{item.icon}</span>
                   <span>{item.name}</span>
-                </Link>
+                </NavLink>
               ))}
             </div>
           </motion.div>
