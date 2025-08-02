@@ -39,7 +39,11 @@ const Projects = () => {
                 {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js"},
                 {icon: <SiExpress className="text-gray-300"/>, name: "Express"},
                 {icon: <SiMongoDb className="text-green-600"/>, name: "MongoDB"},
-            ]
+            ],
+            description:
+            "RESTFUL API an e-commerce platform with product managment, user authentication, and order proccessing.",
+            illustration: eccomerceIllustration,
+            code: ""
         }
     ]
 }
