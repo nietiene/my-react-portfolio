@@ -32,7 +32,14 @@ const Projects = () => {
             "A socket.io based chat application with real-tie messaging, user authentication and message history.",
             illustration: chatAppIllustration,
             code: "https://github.com/nietiene/Chat-app-frontend"
-
+        },
+        {
+            title: "E-Commerce Backend API",
+            tech: [
+                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js"},
+                {icon: <SiExpress className="text-gray-300"/>, name: "Express"},
+                {icon: <SiMongoDb className="text-green-600"/>, name: "MongoDB"},
+            ]
         }
     ]
 }
