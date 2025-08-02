@@ -94,8 +94,7 @@ const Projects = () => {
     return (
         <section
         name="projects"
-          className="min-h-screen w-full bg-gradient-to-b from-gray-900 via-black to-gray-900 text-gray-300 flex items-center justify-center
-           mmd:px-16 py-20"
+          className="w-full bg-gradient-to-b from-gray-900 via-black to-gray-900 text-gray-300 py-20"
         >
             <div className="max-w-6xl w-full">
                 <motion.div
