@@ -10,10 +10,11 @@ import {
     SiExpress,
     SiTypescript,
     SiNextdotjs,
-    SiReact
+    SiPhp
+
 } from "react-icons/si"
 
-import eccomerceIllustration from "../assets/ecomerce.png"
+import studentIllustration from "../assets/student.png"
 import chatAppIllustration from "../assets/chat-app.png"
 import libraryAppIllustration from "../assets/library-managment.png"
 
@@ -34,11 +35,11 @@ const Projects = () => {
             code: "https://github.com/nietiene/Chat-app-frontend"
         },
         {
-            title: "E-Commerce Backend API",
+            title: "Student Managment System",
             tech: [
-                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js"},
-                {icon: <SiExpress className="text-gray-300"/>, name: "Express"},
-                {icon: <SiMongoDb className="text-green-600"/>, name: "MongoDB"},
+                {icon: <SiPhp className="text-green-500"/>, name: "PHP"},
+                {icon: <SiTailwindcss className="text-gray-300"/>, name: "Tailwindcss"},
+                {icon: <SiFirebase className="text-green-600"/>, name: "Firebase"},
             ],
             description:
             "RESTFUL API an e-commerce platform with product managment, user authentication, and order proccessing.",
