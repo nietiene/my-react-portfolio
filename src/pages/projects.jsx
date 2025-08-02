@@ -10,7 +10,8 @@ import {
     SiExpress,
     SiTypescript,
     SiNextdotjs,
-    SiPhp
+    SiPhp,
+    SiReact
 
 } from "react-icons/si"
 
@@ -44,7 +45,16 @@ const Projects = () => {
             description:
             "Student Management System with Student managment, user authentication, and Role based access control.",
             illustration: studentIllustration,
-            code: ""
+            code: "https://github.com/nietiene/Gikonko-Tss-Managment-system"
+        },
+
+        {
+            title: "Portfolio Website",
+            tech: [
+                { icon: <SiNextdotjs className="text-white" />, name: "Next.js"},
+                { icon: <SiNextdotjs className="text-white" />, name: "Next.js"},
+                { icon: <SiNextdotjs className="text-white" />, name: "Next.js"},
+            ]
         }
     ]
 }
