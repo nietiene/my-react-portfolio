@@ -82,9 +82,16 @@ const NavBar = () => {
               onClick={toggleTheme}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9}}
-              className="p-2 rounded-full">
-
+              className="p-2 rounded-full text-gra-300 dark:teay-600 hover:text-cyan-400 dark:hover:text-cyan-600 focus:outline-none"
+              aria-label={`Switch to ${darkMode} ? 'light': 'dark`}
+            >
+               {darkMode ? (
+                <FaSun className="h-6 w-6"/>
+               ) : (
+                <FaMoon className="h-6 w-6"/>
+               )}
              </motion.button>
+             
             <motion.button
               className="text-gray-300 hover:text-cyan-400 focus:outline-none p-2"
               whileHover={{ scale: 1.1 }}
