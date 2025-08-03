@@ -74,8 +74,17 @@ const NavBar = () => {
             ))}
           </div>
 
+
+
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
+            <motion.button
+              onClick={toggleTheme}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9}}
+              className="p-2 rounded-full">
+
+             </motion.button>
             <motion.button
               className="text-gray-300 hover:text-cyan-400 focus:outline-none p-2"
               whileHover={{ scale: 1.1 }}
