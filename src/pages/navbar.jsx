@@ -11,7 +11,7 @@ import avataaars from "../assets/avataaars.svg";
 const NavBar = () => {
   const [activeAction, setActiveAction] = useState("home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(true)
+  const [darkMode, setDarkMode] = useState(true);
 
   const navItems = [
     { name: "Home", target: "/", icon: <FaHome /> },
@@ -28,8 +28,7 @@ const NavBar = () => {
 
   const toggleTheme = () => {
     setDarkMode(!darkMode);
-    document.documentElement.classList.toggle("dark", darkMode)
-  }
+  };
 
   return (
     <motion.div
@@ -74,26 +73,26 @@ const NavBar = () => {
             ))}
           </div>
 
-
-
-          {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          {/* Theme toggle and mobile menu button */}
+          <div className="flex items-center gap-4">
+            {/* Simple theme toggle - only changes icon */}
             <motion.button
               onClick={toggleTheme}
               whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9}}
-              className="p-2 rounded-full text-gra-300 dark:teay-600 hover:text-cyan-400 dark:hover:text-cyan-600 focus:outline-none"
-              aria-label={`Switch to ${darkMode} ? 'light': 'dark`}
+              whileTap={{ scale: 0.9 }}
+              className="p-2 text-gray-300 hover:text-cyan-400 focus:outline-none"
+              aria-label="Toggle theme"
             >
-               {darkMode ? (
-                <FaSun className="h-6 w-6"/>
-               ) : (
-                <FaMoon className="h-6 w-6"/>
-               )}
-             </motion.button>
-             
+              {darkMode ? (
+                <FaSun className="h-6 w-6" />
+              ) : (
+                <FaMoon className="h-6 w-6" />
+              )}
+            </motion.button>
+
+            {/* Mobile menu button */}
             <motion.button
-              className="text-gray-300 hover:text-cyan-400 focus:outline-none p-2"
+              className="md:hidden text-gray-300 hover:text-cyan-400 focus:outline-none p-2"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -151,7 +150,6 @@ const NavBar = () => {
           </motion.div>
         )}
       </AnimatePresence>
-
     </motion.div>
   );
 };
