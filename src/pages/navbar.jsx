@@ -11,7 +11,13 @@ import avataaars from "../assets/avataaars.svg";
 const NavBar = () => {
   const [activeAction, setActiveAction] = useState("home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(() => {
+    // check local storage for saved preference or use system preference
+
+    const savedMode = localStorage.getItem('darkMode');
+    if (savedMode !== null) return JSON.parse(savedMode);
+    return window.matchMedia('(prefers-color-scheme: dark)')
+  });
 
   const navItems = [
     { name: "Home", target: "/", icon: <FaHome /> },
