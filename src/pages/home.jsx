@@ -7,10 +7,10 @@ const Home = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const texts = [
     "Web Developer",
-    "Frontend Specialist",
     "React Expert",
     "UI/UX Enthusiast",
-    "Full Stack Developer"
+    "Graphic Designer",
+    "Full Stack Specialist"
   ];
 
   useEffect(() => {
